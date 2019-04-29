@@ -105,3 +105,8 @@ void doSomething(Widget widget) {
 * *Если память стека полностью занята, то Java Runtime бросает java.lang.StackOverflowError, а если память кучи заполнена, то бросается исключение java.lang.OutOfMemoryError: Java Heap Space.*
 
 * *Размер памяти стека намного меньше памяти в куче. Из-за простоты распределения памяти (LIFO), стековая память работает намного быстрее кучи.*
+
+18. Расскажите про модель памяти в Java?
+
+Ответ: ![Java Memory Model](https://www.google.com/search?q=java+memory+model&newwindow=1&rlz=1C1GGRV_enBY753BY754&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj45aHunPXhAhUDcZoKHVoPDTcQ_AUIDigB&biw=1366&bih=625#imgrc=XthMsleaYbQlRM:)
+
