@@ -23,6 +23,6 @@ int binarySearch(int search, int mass[], int len) {
 * Бинарный поиск работает намного быстрее простого.
 * Время выполнения О(log n), а с увеличением размера списка, в котором ищется значение, оно становится намного быстрее.
 
-![](https://old.yotx.ru/graph.ashx?clr0=ff0000&exp0=log%28x%3B3%29&mix=0&max=100&asx=on&u=mm&nx=x&aiy=on&asy=on&ny=y&iw=600&ih=400&ict=png&aa=on)
+![](https://hsto.org/getpro/habr/post_images/195/e1f/6a1/195e1f6a1379554ca9025338301a78ed.png)
 
 * Бинарный поиск работает ТОЛЬКО в отсортированном списке.

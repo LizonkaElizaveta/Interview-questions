@@ -25,4 +25,4 @@
 
 * Время выполнения О(n^2).
 
-![](https://www.101computing.net/wp/wp-content/uploads/Big-O-Notation-Polynomial-Algorithm.png)
+![](https://hsto.org/getpro/habr/post_images/195/e1f/6a1/195e1f6a1379554ca9025338301a78ed.png)

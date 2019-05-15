@@ -259,6 +259,44 @@ void doSomething(Widget widget) {
 
 *Т.об объекты передаются по ссылке, а примитивы - по значению.*
 
+29. Какие методы есть  у класса Object?
+
+Ответ: 
+
+* *public final native Class getClass()*
+* *public native int hashCode()*
+* *public boolean eguals(Object obj)*
+* *protected native Object clone() throws CloneNotSupportedException*
+* *public String toString()*
+* *public final native void notify()*
+* *public final native void notifyAll()*
+* *public final native void wait(long timeout) throws InterruptedException*
+* *public final void wait(long timeout, int nanos) throws InterruptedException*
+* *public final void wait() throws InterruptedException*
+* *protected void finalize() throws Throwable*
+
+30. Правила переопределения метода Object.equals() и Object.hashCode()?
+
+Ответ: 
+
+* *Рефлексивность: Объект должен равняться себе самому.*
+* *Симметричность: если a.equals(b) возвращает true, то b.equals(a) должен тоже вернуть true.*
+* *Транзитивность: если a.equals(b) возвращает true и b.equals(c) тоже возвращает true, то c.equals(a) тоже должен возвращать true.*
+* *Согласованность: повторный вызов метода equals() должен возвращать одно и тоже значение до тех пор, пока какое-либо значение свойств объекта не будет изменено. То есть, если два объекта равны в Java, то они будут равны пока их свойства остаются неизменными.*
+* *Сравнение null: объект должны быть проверен на null. Если объект равен null, то метод должен вернуть false, а не NullPointerException. Например, a.equals(null) должен вернуть false.*
+
+31. Какая связь между hashCode и equals?
+
+Ответ: *Если объекты равны по результатам выполнения метода equals, тогда их hashcode должны быть одинаковыми.*
+
+*Если объекты не равны по результатам выполнения метода equals, тогда их hashcode могут быть как одинаковыми, так и разными. Однако для повышения производительности, лучше, чтобы разные объекты возвращали разные коды.*
+
+32. Как переопределять метод equals?
+
+Ответ: 
+
+* 
+
 
 
 
