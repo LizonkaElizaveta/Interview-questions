@@ -155,5 +155,85 @@
 
 Ответ: Метод void forEach(Consumer<? super T> action) - для каждого элемента выполняется действие action. forEach является терминальной операцией, используется для перебора каждого элемента потока. forEach не гарантирует последовательности вывода элементов в параллельном потоке, для этого используется forEachOrdered - он это гарантирует.
 
+**19. КАК ВЫВЕСТИ НА ЭКРАН 10 СЛУЧАЙНЫХ ЧИСЕЛ, ИСПОЛЬЗУЯ FOREACH?**
 
+Ответ: 
 
+![](https://2.bp.blogspot.com/-6mAxQv6Vusg/VzlTMKq9wFI/AAAAAAAAArc/ja4oGUiHOeIWpNy9pCB7bU2JnvZh_O82QCLcB/s1600/q061_p01.jpg)
+
+**20. ДЛЯ ЧЕГО ПРЕДНАЗНАЧЕН МЕТОД МАР В ПОТОКАХ(STREAM)?**
+
+Ответ:Метод <R> Stream<R> map(Function<? super T,? extends R>mapper) - преобразует элемента типа T в элементы типа R и возвращает поток с элементами R. map является промежуточной операцией, метод используется для преобразования элеемнтов в другой объект при помощи переданной функции.
+
+**21. КАК МОЖНО ВЫВЕСТИ НА ЭКРАН УНИКАЛЬНЫЕ КВАДРАТЫ ЧИСЕЛ ИСПОЛЬЗУЯ МЕТОД МАР?**
+
+Ответ: 
+![](https://2.bp.blogspot.com/-nspnH6hzD2I/VzlVlc32yWI/AAAAAAAAArs/XwcFIWO3PUUekJlQmKBgw0Ze8lUpvZuMACLcB/s1600/q063_p01.jpg)
+
+**22. КАКОВА ЦЕЛЬ МЕТОДА FILTER В ПОТОКАХ(STREAM)?**
+
+Ответ: Метод Stream<T> filter(Predicate<? super T> predicate) - фильтрует элементы в соответствии с условием в предикате. filter является промежуточной операцией, используется для фильтрации массива через функцию. На самом деле filter, не выполняет фильтрацию, вместо этого создается новый поток, который по завершению формирования, содержит элементы исходного потока, которые соответствуют заданному предикату.
+
+**23. КАК ВЫВЕСТИ НА ЭКРАН КОЛИЧЕСТВО ПУСТЫХ СТРОК С ПОМОЩЬЮ МЕТОДА FILTER?**
+
+Ответ: 
+
+![](https://4.bp.blogspot.com/-zY911QC27ic/VzlWCygwnNI/AAAAAAAAArw/HvvMt-QgHI8OSZ-Sdq77EEz9tRgp5kLEQCLcB/s1600/q065_p01.jpg)
+
+**24. ДЛЯ ЧЕГО ПРЕДНАЗНАЧЕН МЕТОД LIMIT В ПОТОКАХ(STREAM)?**
+
+Ответ: Метод Stream<T> limit(long maxSize) - оставляет в потоке  только maxSize элементов. limit является промежуточной  операцией, используется для выборки первых maxSize элементов потока. Этот метод также возвращает модифицированный поток, в котором не более maxSize элементов.
+
+**25. ДЛЯ ЧЕГО ПРЕДНАЗНАЧЕН МЕТОД SORTED В ПОТОКАХ(STREAM)?**
+
+Ответ: Метод  Stream<T> sorted()/Stream<T> sorted(Comparator<? super T> comparator) - возвращает отсортированный поток. sorted является промежуточной операцией, метод используется для сортировки потока используя естественный порядок сравнения его элементов. Существует также второй метод sorted(), принимающий либо экземпляр Comparable, либо соответствующее ему лямбда-выражение.
+
+**26. КАК ВЫВЕСТИ НА ЭКРАН 10 СЛУЧАЙНЫХ ЧИСЕЛ, ИСПОЛЬЗУЯ SORTED?**
+
+Ответ:  
+
+![](https://3.bp.blogspot.com/-hwrvPoKry5c/VzlXBxlmEeI/AAAAAAAAAsA/l6kJ1BfZsQs4IIttrdVlF-hr5faOf28ZwCLcB/s1600/q068_p01.jpg)
+
+**27. ПАРАЛЛЕЛЬНАЯ ОБРАБОТКА В JAVA8?**
+
+Ответ: Чтобы сделать обычный последовательный поток параллельным, надо вызвать у объекта Stream метод parallel. Кроме того, также можно использовать метод parallelStream() интерфейса Collection для создания параллельного потока из коллекции.
+
+В то же время если рабочая машина не является многоядерной, то поток будет выполняься как последовательный.
+
+![](https://1.bp.blogspot.com/-9Aslxp1s_II/VzlXYv6WF_I/AAAAAAAAAsE/AystaQHLLLo7XiMOkRRTx76vfl403a1ogCLcB/s1600/q069_p01.jpg)
+
+**28. КАК НАЙТИ МАКСИМАЛЬНОЕ/МИНИМАЛЬНОЕ ЧИСЛО В СПИСКЕ JAVA8?**
+
+Ответ: 
+
+![](https://3.bp.blogspot.com/-0pD_xUKbfuI/VzlX23QT_EI/AAAAAAAAAsM/tCJqhREw_5gqkrsb82djWKjKEAE2kXUJQCLcB/s1600/q070_p01.jpg)
+![](https://4.bp.blogspot.com/-HeVxs0Hv-J0/VzlYOP26GSI/AAAAAAAAAsU/rhiBTAcxxyYURcVHoP_FMyWq2YNaR88wACLcB/s1600/q071_p01.jpg)
+
+**29. КАК ПОЛУЧИТЬ СУММУ/СРЕДНЕЕ ЗНАЧЕНИЕ ЧИСЕЛ В СПИСКЕ, ИСПОЛЬЗУЯ JAVA8?**
+
+Ответ: 
+
+![](https://4.bp.blogspot.com/-4Kk6_YFcQy4/VzqletbtAyI/AAAAAAAAAso/cD2-rI0YjT8_Gj2f-bpcxMj-3aAcL-RVgCLcB/s1600/q072_p01.jpg)
+![](https://1.bp.blogspot.com/-URluev3swCg/Vzqlsn9bfmI/AAAAAAAAAss/suF4R-lm0CERvIZjHNrz1LsBK9zSzLRrwCLcB/s1600/q073_p01.jpg)
+
+**30. ЧТО ТАКОЕ OPTIONAL?**
+
+**31. ЧТО ТАКОЕ NASHORN?**
+
+**32. ЧТО ТАКОЕ JJS В JAVA8?**
+
+**34. ЧТО ТАКОЕ LOCALDATETIME В JAVA8?**
+
+**33. ЧТО ТАКОЕ ZONEDDATETIME В JAVA8?**
+
+**34. КАК ПОЛУЧИТЬ ТЕКУЩУЮ ДАТУ С ИСПОЛЬЗОВАНИЕМ TIME API ИЗ JAVA8?**
+
+![](https://3.bp.blogspot.com/-llx6yGQEDdw/VzqnjirpiCI/AAAAAAAAAs8/cnugjp11NEw0-SzOpEZPRP7xaprdezOCwCLcB/s1600/q079_p01.jpg)
+
+**35. КАКОЙ КЛАСС ПОЯВИЛСЯ В JAVA8 ДЛЯ ДЕКОДИРОВАНИЯ ДАННЫХ?**
+
+**36. КАКОЙ КЛАСС ПОЯВИЛСЯ В JAVA8 ДЛЯ КОДИРОВАНИЯ ДАННЫХ?**
+
+**37. КАК СОЗДАВАТЬ BASE64 ДЕКОДИРОВЩИК?**
+
+**38. КАК СОЗДАВАТЬ BASE64 КОДИРОВЩИК?**
