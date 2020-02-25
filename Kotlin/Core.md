@@ -86,6 +86,31 @@ public interface IFoo {
 
 **9. ЧЕМ VAL ОТЛИЧАЕТСЯ ОТ CONST?**
 
+Ответ: const s – константа времени компиляции. Это означает, что ее значение должно быть назначено во время компиляции, в отличие от val s, где это можно сделать во время выполнения. 
+
+Константа никогда не может быть назначена функции или любому конструктору класса, только для String или примитива. Например
+
+```kotlin
+const val foo = complexFunctionCall()  // Not okay
+val fooVal = complexFunctionCall()     // Okay
+
+const val bar = "Hello world"   //Also okay
+```
+
 **10. ЗАЧЕМ НУЖЕН  COMPANION?**
+
+Ответ: Классы в Kotlin не могут иметь статических членов, ключевое слово static не входит в состав языка. Можно пометить объект в классе ключевым словом companion вместе с другим ключевым словом object и обращаться к методам и свойствам объекта через имя содержащего его класса без явного указания имени объекта.
+
+```kotlin
+class Something{
+	companion object {
+		fun bar() {
+			println("Companion object called")
+		}
+	}
+}
+
+Something.bar() // Companion object called
+```
 
 **11. ЧТО ТАКОЕ TYPEALIAS?**
