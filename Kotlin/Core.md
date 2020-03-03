@@ -113,4 +113,11 @@ class Something{
 Something.bar() // Companion object called
 ```
 
-**11. ЧТО ТАКОЕ TYPEALIAS?**
+**11. ЧТО ТАКОЕ TYPE ALIAS?**
+
+Ответ: Псевдонимы типов предоставляют альтернативные имена для существующих типов. Если имя типа слишком длинное, вы можете ввести другое более короткое имя и использовать вместо него новое.
+
+```kotlin
+typealias NodeSet = Set<Network.Node>
+typealias FileTable<K> = MutableMap<K, MutableList<File>>
+```
