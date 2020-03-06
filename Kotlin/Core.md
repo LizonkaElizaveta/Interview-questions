@@ -121,3 +121,8 @@ Something.bar() // Companion object called
 typealias NodeSet = Set<Network.Node>
 typealias FileTable<K> = MutableMap<K, MutableList<File>>
 ```
+**12. Ключевые слова with, apply, also, run, let?**
+
+**13. Что такое inline(), noinline(), crossinline() функции?**
+
+**14. **
