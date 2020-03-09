@@ -125,4 +125,8 @@ typealias FileTable<K> = MutableMap<K, MutableList<File>>
 
 **13. Что такое inline(), noinline(), crossinline() функции?**
 
-**14. **
+**14. Ковариантность/инвариатность в Kotlin?**
+
+**15. Ключевое слово reified?**
+
+**16. Коллекции в Kotlin?**
