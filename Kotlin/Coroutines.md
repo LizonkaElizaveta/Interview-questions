@@ -5,9 +5,11 @@
 * suspend -
 * runBlocking -
 * GlobalScope.async - 
-*
+* join - 
+* await - 
 
-**2. Как внутри устроены корутины?**
+
+**2. Что такое корутины и как внутри устроены?**
 
 Ответ: 10мин . 25мин
 
@@ -15,9 +17,14 @@
 
 Ответ: 14мин
 
-**4.**
+**4. Coroutinew builders**
 
 Ответ:
+
+* launch -
+* runBlocking - 
+* async - 
+
 
 **5.**
 
