@@ -170,6 +170,8 @@ https://itsobes.ru/AndroidSobes/v-chem-raznitsa-mezhdu-invalidate-i-requestlayou
 
 **34. Handler, Looper, MessageQueue**
 
+https://stackofskills.com/android-interview-7-threads/
+
 **35. Типы сервисов (запущенный, привязанный, IntentService), их отличия и жизненные циклы;**
 
 запущенная -  компонент сервис запускается вызовом метода Context.startService(intent) и завершается с помощью stopService()(может также остановить себя сама), привязанный - Context.bindService(intent,serviceConnection, int) взыимодействует через интерфейс ServiceConnection и в любой момент может разорвать свзять, т.е. привязывается к уже готовой службе
