@@ -11,3 +11,6 @@
 Молния — это множество электронов, которые с огромной скоростью летят из одной точки в другую.
 
 ![](http://doctus-stilus.narod.ru/img/gates.png)
+
+![](https://lh3.googleusercontent.com/proxy/IO_V1oYRv69bwD32ffHYFe69uvxnn8_RzR_6e0A2h3scHSN0ZykW4kRgBRaG1Bf5mGhAUG0TbN3_XE34d22LmKgk85fCB_rXxEJeZqWgZDtSj_xN-HmOYSOoNdiwX4JldbRmW0raquiFmQobBNB9zXEI10Yaoo_-ygT9pu5zndPEx5T9LFU)
+
